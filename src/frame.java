@@ -10,7 +10,7 @@ class frame extends JFrame
 		int x=416,y=559;
 		JFrame.setDefaultLookAndFeelDecorated(true);
 		setTitle("Shiraz's Sudokool V2.5");
-		setIconImage(new ImageIcon(frame.class.getResource("pics/top.png")).getImage());
+		setIconImage(new ImageIcon(frame.class.getResource("images/top.png")).getImage());
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		pref = new Prefs();
 		String s = pref.getPref(Prefs.FRAME_SIZE);

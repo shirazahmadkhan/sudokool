@@ -29,25 +29,25 @@ class panel1 extends JPanel
 	static JRadioButton eight=new JRadioButton("8");
 	static JRadioButton nine=new JRadioButton("9");
 	ButtonGroup nos=new ButtonGroup();
-	ImageIcon warnon=new ImageIcon(panel1.class.getResource("pics/waron.png"));
-	ImageIcon warnoff=new ImageIcon(panel1.class.getResource("pics/waroff.png"));
-	ImageIcon helpicon=new ImageIcon(panel1.class.getResource("pics/help.png"));
-	ImageIcon pause=new ImageIcon(panel1.class.getResource("pics/pause.png"));
-	ImageIcon hintson=new ImageIcon(panel1.class.getResource("pics/hintson.png"));
-	ImageIcon hintsoff=new ImageIcon(panel1.class.getResource("pics/hintsoff.png"));
-	ImageIcon resume=new ImageIcon(panel1.class.getResource("pics/play.png"));
+	ImageIcon warnon=new ImageIcon(panel1.class.getResource("images/waron.png"));
+	ImageIcon warnoff=new ImageIcon(panel1.class.getResource("images/waroff.png"));
+	ImageIcon helpicon=new ImageIcon(panel1.class.getResource("images/help.png"));
+	ImageIcon pause=new ImageIcon(panel1.class.getResource("images/pause.png"));
+	ImageIcon hintson=new ImageIcon(panel1.class.getResource("images/hintson.png"));
+	ImageIcon hintsoff=new ImageIcon(panel1.class.getResource("images/hintsoff.png"));
+	ImageIcon resume=new ImageIcon(panel1.class.getResource("images/play.png"));
 	ImageIcon warn=warnon;
-	ImageIcon paused=new ImageIcon(panel1.class.getResource("pics/paused.gif"));
-	ImageIcon customicon=new ImageIcon(panel1.class.getResource("pics/custom.png"));
-	ImageIcon verifyicon=new ImageIcon(panel1.class.getResource("pics/verify.png"));
-	ImageIcon new3=new ImageIcon(panel1.class.getResource("pics/new.png"));
-	ImageIcon pagain=new ImageIcon(panel1.class.getResource("pics/atlantik.png"));
-	ImageIcon highscr=new ImageIcon(panel1.class.getResource("pics/high.png"));
-	ImageIcon icon=new ImageIcon(panel1.class.getResource("pics/clock.png"));
-	ImageIcon showicon=new ImageIcon(panel1.class.getResource("pics/sol.png"));
-	ImageIcon exiticon=new ImageIcon(panel1.class.getResource("pics/exit.png"));
-	ImageIcon openicon=new ImageIcon(panel1.class.getResource("pics/open.png"));
-	ImageIcon saveicon=new ImageIcon(panel1.class.getResource("pics/save.png"));
+	ImageIcon paused=new ImageIcon(panel1.class.getResource("images/paused.gif"));
+	ImageIcon customicon=new ImageIcon(panel1.class.getResource("images/custom.png"));
+	ImageIcon verifyicon=new ImageIcon(panel1.class.getResource("images/verify.png"));
+	ImageIcon new3=new ImageIcon(panel1.class.getResource("images/new.png"));
+	ImageIcon pagain=new ImageIcon(panel1.class.getResource("images/atlantik.png"));
+	ImageIcon highscr=new ImageIcon(panel1.class.getResource("images/high.png"));
+	ImageIcon icon=new ImageIcon(panel1.class.getResource("images/clock.png"));
+	ImageIcon showicon=new ImageIcon(panel1.class.getResource("images/sol.png"));
+	ImageIcon exiticon=new ImageIcon(panel1.class.getResource("images/exit.png"));
+	ImageIcon openicon=new ImageIcon(panel1.class.getResource("images/open.png"));
+	ImageIcon saveicon=new ImageIcon(panel1.class.getResource("images/save.png"));
 		
 	JButton btn1=new JButton("New ",new3);
 	JButton btn2=new JButton("Again",pagain);
@@ -699,10 +699,10 @@ class new2 extends JDialog
 {		
 	static int diff=0;			// difficulty level 1:simple, 2: easy, 3: medium, 4:hard
 
-	ImageIcon simple=new ImageIcon(panel1.class.getResource("pics/simple.png"));
-	ImageIcon easy=new ImageIcon(panel1.class.getResource("pics/easy.png"));
-	ImageIcon medium=new ImageIcon(panel1.class.getResource("pics/medium.png"));
-	ImageIcon hard=new ImageIcon(panel1.class.getResource("pics/hard.png"));
+	ImageIcon simple=new ImageIcon(panel1.class.getResource("images/simple.png"));
+	ImageIcon easy=new ImageIcon(panel1.class.getResource("images/easy.png"));
+	ImageIcon medium=new ImageIcon(panel1.class.getResource("images/medium.png"));
+	ImageIcon hard=new ImageIcon(panel1.class.getResource("images/hard.png"));
 	JButton bsimple=new JButton(simple);
 	JButton beasy=new JButton(easy);
 	JButton bmedium=new JButton(medium);
@@ -773,7 +773,7 @@ class new2 extends JDialog
 					callAction();
 			}
 		});
-		owner2.setIconImage(new ImageIcon(getClass().getResource("pics/top.png")).getImage());
+		owner2.setIconImage(new ImageIcon(getClass().getResource("images/top.png")).getImage());
 		setSize(400,200);
 		Point p=paneb.getLocationOnScreen();
 		p.translate((paneb.getWidth()-400)/2,45);

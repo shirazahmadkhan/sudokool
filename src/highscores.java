@@ -290,7 +290,7 @@ public void readFile(frame frameobj)
 	JTabbedPane panel=new JTabbedPane();
 	JPanel panel1 = new JPanel(); 
 	JPanel panel2 = new JPanel();
-	record_frame.setIconImage(new ImageIcon(highscores.class.getResource("pics/top.png")).getImage());
+	record_frame.setIconImage(new ImageIcon(highscores.class.getResource("images/top.png")).getImage());
 	Point p=frameobj.getLocationOnScreen();
 	p.translate((frameobj.getWidth()-250)/2,80);
 	record_frame.setLocation(p);

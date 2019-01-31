@@ -11,7 +11,7 @@ public class help extends JFrame
 	public help(panel2 panel2obj)
 	{
 		setTitle("Sudokool Help");
-		setIconImage(new ImageIcon(help.class.getResource("pics/top.png")).getImage());
+		setIconImage(new ImageIcon(help.class.getResource("images/top.png")).getImage());
 		setSize(450,600);
 		JTabbedPane tabbedpane=new JTabbedPane();
 		tabbedpane.addTab("How to Play",new play());
