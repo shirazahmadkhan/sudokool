@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import org.jvnet.substance.skin.*;;
 
 class frame extends JFrame
 {
@@ -37,7 +36,7 @@ class frame extends JFrame
 	{
 		try 
 		{
-		      UIManager.setLookAndFeel(new SubstanceEmeraldDuskLookAndFeel());
+		      UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
 		}
 		catch (Exception e) 
 		{

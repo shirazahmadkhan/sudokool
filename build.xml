@@ -17,15 +17,14 @@
     <target name="compile" depends="init" description="compile the source">
         <javac srcdir="${src}" 
                 destdir="${build.classes}" 
-                includeantruntime="false"
-                classpath="library/substance.jar" />
+                includeantruntime="false"/>
     </target>
  
     <target name="clean" description="clean up">
         <delete dir="${build}" />
     </target>
 
-    <target name = "jar">
+    <target name = "jar" depends="compile" description="build the jar">
         <delete file="Sudokool.jar" />
         <jar destfile = "Sudokool.jar">
             <fileset dir = "${build.classes}"
